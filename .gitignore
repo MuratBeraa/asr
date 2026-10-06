@@ -1,0 +1,26 @@
+# Kritik — API anahtarları
+.env
+.env.local
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+venv/
+.venv/
+env/
+
+# ChromaDB
+chroma_db/
+
+# VS Code
+.vscode/
+
+# Sistem
+.DS_Store
+Thumbs.db
+
+# Log
+*.log

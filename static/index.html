@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eminevim · Canlı Asistan</title>
+<link rel="stylesheet" href="/static/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="app">
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-icon">🏠</span>
+      <div>
+        <div class="brand-title">Eminevim · Canlı Asistan</div>
+        <div class="brand-sub">Türkçe STT + Battle Card</div>
+      </div>
+    </div>
+    <div class="topbar-right">
+      <div class="status-pill" id="statusPill">
+        <span class="dot" id="dot"></span>
+        <span id="statusText">Bağlı değil</span>
+      </div>
+      <button id="btn" class="btn-primary">Başlat</button>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <section class="transcript-panel">
+      <div class="transcript-head">
+        <h2>Canlı Konuşma</h2>
+        <span class="transcript-meta" id="charCount">0 karakter</span>
+      </div>
+      <div class="transcript-body" id="transcriptBody">
+        <span class="placeholder">Mikrofonu başlatınca konuşma burada belirecek...</span>
+      </div>
+    </section>
+
+    <section class="battle-section">
+      <div class="battle-head">
+        <h2>Battle Card</h2>
+        <button id="refreshBtn" class="btn-ghost">🔄 Yenile</button>
+      </div>
+      <div class="battle-grid">
+        <div class="bc-card bc-intent">
+          <div class="bc-label">
+            <span class="bc-icon">🎯</span> Müşteri Niyeti
+          </div>
+          <div class="bc-body" id="bcIntent">Henüz analiz yok</div>
+        </div>
+        <div class="bc-card bc-action">
+          <div class="bc-label">
+            <span class="bc-icon">💡</span> Önerilen Aksiyon
+          </div>
+          <div class="bc-body" id="bcAction">Henüz analiz yok</div>
+        </div>
+        <div class="bc-card bc-warning">
+          <div class="bc-label">
+            <span class="bc-icon">⚠️</span> Dikkat Edilecekler
+          </div>
+          <div class="bc-body" id="bcWarning">Henüz analiz yok</div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footbar">
+    <span class="foot-note">Konuşma bittiğinde cümle koyu renge döner · Yeni cümle canlı yazılır</span>
+  </footer>
+
+</div>
+<script src="/static/app.js"></script>
+</body>
+</html>

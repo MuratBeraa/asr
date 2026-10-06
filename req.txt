@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+python-dotenv
+openai
+turkish-stt
+sounddevice
+websockets
+chromadb
+sentence-transformers
